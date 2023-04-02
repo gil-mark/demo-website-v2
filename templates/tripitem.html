@@ -1,0 +1,11 @@
+<div class="border-bottom" style="margin-bottom:16px;">
+  <h4 style="margin-bottom:4px;">{{trip['title']}}</h4>
+  <div style="color:rgb(120,120,120)">
+    <b>Location:</b> {{trip['country']}}
+  </div>
+  {% if 'cost' in trip %}
+  <div style="color:rgb(120,120,120)">
+    <b>Cost:</b> ${{trip['cost']}}
+  </div>
+  {% endif %}
+</div>
